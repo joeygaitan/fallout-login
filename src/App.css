@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "unix-font";
+  src: url('./font/Apple\ ][.ttf') format("truetype");
+}
+
 .App {
   text-align: center;
+  font-family: 'unix-font';
 }
 
 .App-logo {
