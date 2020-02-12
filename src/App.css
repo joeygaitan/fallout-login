@@ -6,6 +6,8 @@
 .App {
   text-align: center;
   font-family: 'unix-font';
+  color:#2DFF6B;
+  background-color: #15511F;
 }
 
 .App-logo {
