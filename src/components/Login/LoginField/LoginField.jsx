@@ -12,8 +12,9 @@ class LoginField extends Component {
 
     onFinish = () => {
         if (this.state === this.props.randomWord){
-            
+            this.props.history.push('/USER')
         }
+        this.setState({ tries: this.state.tries + 1 })
     }
 
     render() {
@@ -23,6 +24,7 @@ class LoginField extends Component {
                 <input type="text" value={this.state.password} onChange={(e)=> this.setState({
                     password: e.target.value
                 })}/>
+                <button onClick={this.onFinish()}> login</button>
             </div>
         );
     }
