@@ -1,13 +1,13 @@
 import React from 'react';
 import LoginField from './LoginField/LoginField';
-import randomWords from 'random-words';
 
 
-const Login = () => {
+
+const Login = ({randomWord}) => {
     return ( 
         <div>
             <h1>Pleasse Enter The Password to the Terminal</h1>
-            <LoginField randomWord = {randomWords()}/>
+            <LoginField randomWord = {randomWord}/>
         </div>
      );
 }
