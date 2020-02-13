@@ -3,12 +3,13 @@ import React, { Component } from 'react';
 class LoginField extends Component {
     constructor(props) {
         super(props);
-        this.state = {  };
+        this.state = { password: '' };
     }
     render() {
+        console.log(this.props.randomWord)
         return (
             <div>
-                <input type="text"/>
+                <input type="text" value={this.state.password} />
             </div>
         );
     }
