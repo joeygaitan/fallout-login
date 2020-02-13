@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-const User = () => {
+const User = ({userName}) => {
     return ( 
         <div>
-            hello
+            hello {userName}
         </div>
      );
 }

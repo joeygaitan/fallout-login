@@ -6,5 +6,4 @@ Inspired by fallout computer terimnal hacking game....
 * React.js
 * React Router
 * Custom apple font: Apple ][ by Zeb
-* context api
 * React Hooks
