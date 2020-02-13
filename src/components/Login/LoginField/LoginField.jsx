@@ -7,7 +7,7 @@ class LoginField extends Component {
         this.state = { password: '', tries: 3 };
     }
 
-    componentDidMount = () =>{
+    componentDidMount = () => {
         
     }
 
@@ -28,7 +28,7 @@ class LoginField extends Component {
                 <input type="text" value={this.state.password} onChange={(e)=> this.setState({
                     password: e.target.value
                 })}/>
-                <button onClick={this.onFinish()}>login</button>
+                <button onClick={this.onFinish.bind(this)}>login</button>
             </div>
         );
     }
