@@ -15,7 +15,9 @@ class LoginField extends Component {
         if (this.state === this.props.randomWord) {
             this.props.history.push('/USER')
         }
-        this.setState({ tries: this.state.tries - 1 })
+        if(this.state.password != ''){
+            this.setState({ tries: this.state.tries - 1 })
+        }
         if (this.state.tries === 0) {
             this.props.history.push('/HACK')
         }

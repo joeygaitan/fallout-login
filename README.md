@@ -7,3 +7,4 @@ Inspired by fallout computer terimnal hacking game....
 * React Router
 * Custom apple font: Apple ][ by Zeb
 * React Hooks
+* Random word generation api: https://www.npmjs.com/package/random-words
