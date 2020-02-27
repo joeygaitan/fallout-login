@@ -9,17 +9,17 @@ import Login from './components/Login/Login';
 import HackLogin from './components/HackLogin/HackingLogin';
 import User from './components/UserPage/User';
 
-function randomUCS2HexaDecimalGenrator () {
+const randomUCS2HexaDecimalGenrator = () => {
   let randomString = '0xF' + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10)
   return randomString
 }
 
-function rowGenerator () { 
+const rowGenerator = () => { 
   let array = []
   for (let i = 0; i <= 1; i += 1){
-    array.push({})
-    for(let j = 1; j <= 18; j += 1)
-    array[i][j] = randomUCS2HexaDecimalGenrator()
+    array.push([])
+    for(let j = 0; j <= 17; j += 1)
+    array[i].push(randomUCS2HexaDecimalGenrator())
   }
   return array
 }
@@ -37,7 +37,7 @@ const App = () => {
       <div>
         <Switch>
           <Route exact path='/' render = {(props) => <Login {...props} randomWord = { word }/>}/>
-          <Route path='/HACK' render = {(props) => <HackLogin {...props} randomWord = { word } randomWords = { words } />}/>
+          <Route path='/HACK' render = {(props) => <HackLogin {...props} randomWord = { word } hexGenerator = { generator } />}/>
           <Route path= '/USER' render = {(props) => <User {...props} userName = {name}/>}/>
         </Switch>
       </div>

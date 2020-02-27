@@ -3,10 +3,20 @@
     src: url('./font/Apple\ ][.ttf') format("truetype");
   }
   
+
+  body, html {
+    height: 100%;
+  }
+
 body{
-    padding-top: 20%;
-    text-align: center;
+  
     font-family: 'unix-font';
     color:#2DFF6B;
     background-color: #15511F;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
