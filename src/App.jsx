@@ -19,7 +19,7 @@ const App = () => {
       <div>
         <Switch>
           <Route exact path='/' render = {(props) => <Login {...props} randomWord = { word }/>}/>
-          <Route path='/HACK' render = {(props) => <HackLogin {...props} randomWords = { words } />}/>
+          <Route path='/HACK' render = {(props) => <HackLogin {...props} randomWord = { word } randomWords = { words } />}/>
           <Route path= '/USER' render = {(props) => <User {...props} userName = {name}/>}/>
         </Switch>
       </div>

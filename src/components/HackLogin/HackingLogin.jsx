@@ -1,9 +1,11 @@
 import React from 'react';
 
-const HackingLogin = (randomWords) => {
+const HackingLogin = ({randomWord, randomWords}) => {
+    const randomUsc = {}
+
     return ( 
     <div>
-        Access Denied Please Contact Administrator to Regain Access
+        
     </div> );
 }
  
