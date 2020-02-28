@@ -31,7 +31,7 @@ const App = () => {
   let name = "ROOTUSER"
   let generator = rowGenerator()
   
-  console.log(generator)
+ 
   return (
     <BrowserRouter>
       <div>
