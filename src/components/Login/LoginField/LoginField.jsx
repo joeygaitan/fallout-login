@@ -22,10 +22,9 @@ class LoginField extends Component {
     }
 
     render() {
-        console.log(this.state.password, this.state.tries, this.props.randomWord)
         return (
-            <div>
-                { (4 > this.state.tries >= 1) ? <h1>tries left :{this.state.tries}</h1>: ''}
+            <div className="inputWrapper">
+                { (4 > this.state.tries >= 1) ? <h1 className="triesLeftH1">tries left :{this.state.tries}</h1>: ''}
                 <input type="text" value={this.state.password} onChange={(e)=> this.setState({
                     password: e.target.value
                 })}/>
