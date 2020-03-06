@@ -30,13 +30,9 @@ const randomString = () => {
 
   for (let i = 0; i <= 17;i += 1){
     characterString.push(characters[Math.floor(Math.random() * 18)])
-
   }
-  // console.log(characterString)
+
   return characterString
-  // string.join()
-  // console.log(string)
-  // return string
 }
 
 //length of word minus length of array shouldn't return minus

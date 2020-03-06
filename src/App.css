@@ -33,3 +33,13 @@ button {
 }
 
 
+.boxContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxOne {
+  display: flex;
+  flex-direction: column;
+}
+
