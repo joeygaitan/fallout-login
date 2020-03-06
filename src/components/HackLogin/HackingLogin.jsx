@@ -1,10 +1,47 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 //components
-import HackCount from './HackCount'
-import PastAttempts from './PastAttempts'
+import HackCount from './HackCount';
+import PastAttempts from './PastAttempts';
+
+
+// function useKey(key){
+//     const [pressed,setPressed] = useState
+
+//     const match = event => key.toLowerCase() == event.key.toLowerCase()
+
+//     const onDown = event => {
+//         if (match(event)) setPressed(true)
+//     }
+
+//     const onUp = event => {
+//         if (match(event)) setPressed(false)
+//     }
+
+//     useEffect(()=>{
+//         window.addEventListener('keydown',onDown)
+//         window.addEventListener('keyup',onUp)
+//         return () => {
+//             window.addEventListener('keydown',onDown)
+//             window.addEventListener('keyup',onUp)
+//         }
+//     },[key])
+
+//     return pressed
+// }
+
+
 
 const HackingLogin = ({randomWord, hexGenerator,wordRowGenerator}) => {
+    let value = 4
+    let guessArray = []
+
+    const guess = (e) => {
+        console.log()
+        if (guess != randomWord) {
+            guessArray.push()
+        }
+    }
 
     const displayLeftList = hexGenerator[0].map((item)=>{
     return <li>{item}</li>
@@ -19,12 +56,14 @@ const HackingLogin = ({randomWord, hexGenerator,wordRowGenerator}) => {
     })
 
     const displayRandomCharactersRight = wordRowGenerator[1].map((item)=>{
-        return <li>{item}</li>
+        return <li onClick={guess()}>{item}</li>
     })
 
     return ( 
     <div className="boxContainer">
-        <HackCount/>
+        <div className="triesCount">
+            <HackCount count = {value}/>
+        </div>
         <div className="boxOne">
             <div>
                 <ul className="listHexOne">
@@ -45,7 +84,9 @@ const HackingLogin = ({randomWord, hexGenerator,wordRowGenerator}) => {
                 {displayRandomCharactersRight}
             </ul>
         </div>
-        <PastAttempts/>
+        <div className="passAttempts">
+            <PastAttempts/>
+        </div>
     </div> );
 }
  

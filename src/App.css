@@ -37,13 +37,41 @@ button {
   display: flex;
 }
 
+.triesCount {
+  flex: 0;
+}
+
 .boxOne {
   flex: 1;
   display: flex;
 }
 
+.boxOne li {
+  cursor: pointer;
+}
+
 .boxTwo {
   flex: 1;
   display: flex;
+}
+
+.randomStringsOne li {
+  cursor: pointer;
+}
+
+.randomStringsOne li:hover {
+  background-color: aliceblue;
+}
+
+.randomStringsTwo li {
+  cursor: pointer;
+}
+
+.randomStringsTwo li:hover {
+  background-color: aliceblue;
+}
+
+.passAttempts {
+  flex: 1;
 }
 

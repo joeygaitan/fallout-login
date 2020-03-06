@@ -9,6 +9,9 @@ class PastAttempts extends Component {
         return ( 
             <div>
                 Past Attempts
+                <br/>
+                
+                <button>Guess</button>
             </div>
          );
     }
