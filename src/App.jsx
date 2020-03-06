@@ -67,7 +67,7 @@ const App = () => {
   let generator = rowGenerator()
   let wordGenerator = generateTextGenerator(word, words)
   
-  console.log(generator)
+ 
   return (
     <BrowserRouter>
       <div>
