@@ -18,7 +18,9 @@ input {
   font-family: "unix-font";
   color: #2DFF6B;
   background-color: #15511F;
-  border: 0;
+  border: 1;
+  border-color: aquamarine;
+  margin-right: 10px;
 }
 
 button {

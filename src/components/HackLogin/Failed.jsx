@@ -3,7 +3,7 @@ import React from 'react';
 const Failed = () => {
     return ( 
         <div>
-            Please try again
+            Login Failed.... Please Contact an Admins
         </div>
      );
 }
