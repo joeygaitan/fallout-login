@@ -20,8 +20,10 @@ class PastAttempts extends Component {
                         return <li>{item}</li>
                     })}
                 </ul>
-                <button onClick = {this.try}>Guess</button>
-                {this.props.guess}
+                <button onClick = {this.try}>Try</button>
+                <br/>
+                <p>Current Selected Guess:{this.props.guess}</p>
+                
             </div>
          );
     }

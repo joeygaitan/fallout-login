@@ -6,33 +6,6 @@ import PastAttempts from './PastAttempts';
 import Failed from './Failed';
 
 
-// function useKey(key){
-//     const [pressed,setPressed] = useState
-
-//     const match = event => key.toLowerCase() == event.key.toLowerCase()
-
-//     const onDown = event => {
-//         if (match(event)) setPressed(true)
-//     }
-
-//     const onUp = event => {
-//         if (match(event)) setPressed(false)
-//     }
-
-//     useEffect(()=>{
-//         window.addEventListener('keydown',onDown)
-//         window.addEventListener('keyup',onUp)
-//         return () => {
-//             window.addEventListener('keydown',onDown)
-//             window.addEventListener('keyup',onUp)
-//         }
-//     },[key])
-
-//     return pressed
-// }
-
-
-
 class HackingLogin extends Component {
     constructor(props){
         super(props)
@@ -42,6 +15,8 @@ class HackingLogin extends Component {
             guess: ''
         }
     }
+
+    
 
     selectedGuessLeft = (event) => {
         let value = this.props.wordRowGenerator[0][event.target.value]
@@ -58,7 +33,6 @@ class HackingLogin extends Component {
     }
 
     guess = () => {
-        console.log('heres')
         if (this.state.guess != this.props.randomWord) {
             this.setState({
                 guessArray: [...this.state.guessArray, this.state.guess],
@@ -70,7 +44,6 @@ class HackingLogin extends Component {
     }
 
     render () {
-        console.log(this.props.randomWord)
     return ( 
     <>
     {this.state.value > 0 ? <>

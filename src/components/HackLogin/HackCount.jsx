@@ -6,7 +6,7 @@ const HackCount = ({count}) => {
             tries {count}
             <br/>
             <p>
-                select a guess. Then press Guess....
+                select a guess. Then press Try....
             </p>
         </div>
      );
