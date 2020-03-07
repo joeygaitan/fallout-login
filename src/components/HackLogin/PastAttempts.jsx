@@ -5,13 +5,23 @@ class PastAttempts extends Component {
         super(props);
         this.state = {  }
     }
+
+    try = () => {
+        this.props.guessMeth()
+    }
+
     render() { 
         return ( 
             <div>
                 Past Attempts
                 <br/>
-                
-                <button>Guess</button>
+                <ul>
+                    {this.props.attempts.map((item)=>{
+                        return <li>{item}</li>
+                    })}
+                </ul>
+                <button onClick = {this.try}>Guess</button>
+                {this.props.guess}
             </div>
          );
     }
