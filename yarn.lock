@@ -2004,6 +2004,13 @@
   dependencies:
     "safer-buffer" "~2.1.0"
 
+"assemblyscript@github:AssemblyScript/assemblyscript":
+  "resolved" "git+ssh://git@github.com/AssemblyScript/assemblyscript.git#076d8a9e4f8660745e4ec1bff4364e4c30343ed1"
+  "version" "0.0.0"
+  dependencies:
+    "binaryen" "111.0.0-nightly.20230202"
+    "long" "^5.2.1"
+
 "assert-plus@^1.0.0", "assert-plus@1.0.0":
   "integrity" "sha1-8S4PPF13sLHN2RRpQuTpbB5N1SU="
   "resolved" "https://registry.npmjs.org/assert-plus/-/assert-plus-1.0.0.tgz"
@@ -2282,6 +2289,11 @@
   "integrity" "sha512-Phlt0plgpIIBOGTT/ehfFnbNlfsDEiqmzE2KRXoX1bLIlir4X/MR+zSyBEkL05ffWgnRSf/DXv+WrUAVr93/ow=="
   "resolved" "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.0.0.tgz"
   "version" "2.0.0"
+
+"binaryen@111.0.0-nightly.20230202":
+  "integrity" "sha512-aGMDtxmc8zQHzAamyOBvO38n2e/GuXM0dZCJg+IuG2YUQODTqI37XSkAixS8c0wXn2dgLntDMk1VDblKCsy0GA=="
+  "resolved" "https://registry.npmjs.org/binaryen/-/binaryen-111.0.0-nightly.20230202.tgz"
+  "version" "111.0.0-nightly.20230202"
 
 "bl@^1.0.0":
   "integrity" "sha512-pvcNpa0UU69UT341rO6AYy4FVAIkUHuZXRIWbq+zHnsVcRzDDjIAhGuuYoi0d//cwIwtt4pkpKycWEfjdV+vww=="
@@ -6519,6 +6531,11 @@
   "integrity" "sha512-cY2eLFrQSAfVPhCgH1s7JI73tMbg9YC3v3+ZHVW67sBS7UxWzNEk/ZBbSfLykBWHp33dqqtOv82gjhKEi81T/A=="
   "resolved" "https://registry.npmjs.org/loglevel/-/loglevel-1.6.7.tgz"
   "version" "1.6.7"
+
+"long@^5.2.1":
+  "integrity" "sha512-GKSNGeNAtw8IryjjkhZxuKB3JzlcLTwjtiQCHKvqQet81I93kXslhDQruGI/QsddO83mcDToBVy7GqGS/zYf/A=="
+  "resolved" "https://registry.npmjs.org/long/-/long-5.2.1.tgz"
+  "version" "5.2.1"
 
 "loose-envify@^1.0.0", "loose-envify@^1.1.0", "loose-envify@^1.2.0", "loose-envify@^1.3.1", "loose-envify@^1.4.0":
   "integrity" "sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q=="

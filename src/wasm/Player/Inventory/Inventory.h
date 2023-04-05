@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "WorldObject.h"
+#include "../../WorldObjects/WorldObject.h"
 #include <vector>
 #include <map>
 

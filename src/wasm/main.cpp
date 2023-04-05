@@ -1,7 +1,7 @@
 #include <iostream>
 #include <time.h>
 #include <stdlib.h>
-#include "Game.h"
+#include "./Game/Game.h"
 #include <unordered_map>
 
 int main()

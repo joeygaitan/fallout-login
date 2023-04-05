@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <conio.h>
-#include "Inventory.h"
+#include "./Inventory/Inventory.h"
 
 class Grid;
 class WorldObject;

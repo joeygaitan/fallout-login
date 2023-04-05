@@ -3,11 +3,11 @@
 #include <vector>
 #include <unordered_map>
 #include <map>
-#include "WorldObject.h"
-#include "Player.h"
-#include "Resource.h"
-#include "Rocket.h"
-#include "Assembler.h"
+#include "../../WorldObjects/WorldObject.h"
+#include "../../Player/Player.h"
+#include "../../WorldObjects/Resource/Resource.h"
+#include "../../WorldObjects/Rocket/Rocket.h"
+#include "../../WorldObjects/Assembler/Assembler.h"
 
 class Grid
 {

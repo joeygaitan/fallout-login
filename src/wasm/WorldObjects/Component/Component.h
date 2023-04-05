@@ -1,6 +1,6 @@
 #pragma once
-#include "WorldObject.h"
-#include "Player.h"
+#include "../WorldObject.h"
+#include "../../Player/Player.h"
 
 class Component: public WorldObject
 {

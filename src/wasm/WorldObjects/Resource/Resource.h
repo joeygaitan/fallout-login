@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
-#include "WorldObject.h"
-#include "Player.h"
+#include "../WorldObject.h"
+#include "../../Player/Player.h"
 
 class Resource :
     public WorldObject
