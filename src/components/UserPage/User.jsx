@@ -1,31 +1,25 @@
-import React, { useEffect} from 'react';
-
-import waApi from './wa-api';
+import React, { useEffect, useRef } from 'react';
 
 const User = ({userName}) => {
 
-    useEffect(()=>{
-        waApi.then(waApi => {
-            const mandelIterWASM = waApi._Z10mandelIterffi;
-            let canvas = this.refs.canvas.getContext('2d');
-            let mag = 200;
-            let panX = 2;
-            let panY = 1.25;
-            let maxIter = 100;
-        
-            for (let x = 10; x < this.props.height; x++)  {
-              for (let y = 10; y < this.props.width; y++)  {
-                // let m = this.mandelIter(x/mag - panX, y/mag - panY, maxIter);
-                canvas.fillStyle = '#FFAA00'; 
-                canvas.fillRect(x, y, 1,1);
-              }
-            }
-          });
-    })
+    const canvasRef = useRef(null);
+
+    const drawOnCanvas = async () => {
+      const response = await fetch('main.wasm');
+      const bytes = await response.arrayBuffer();
+      const { instance } = await WebAssembly.instantiate(bytes);
+
+      const canvas = canvasRef.current;
+      const ctx = canvas.getContext('2d');
+
+      instance.exports.draw(ctx);
+    }
 
     return ( 
         <div>
             hello {userName}
+            <canvas ref={canvasRef} width={400} height={400} />
+            <button onClick={drawOnCanvas}>Draw on canvas</button>
         </div>
      );
 }
