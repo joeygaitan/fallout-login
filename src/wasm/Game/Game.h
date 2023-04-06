@@ -1,7 +1,7 @@
 #pragma once
 #include <map>
-#include "../../Player/Player.h"
-#include "../../WorldObjects/WorldObject.h"
+#include "../Player/Player.h"
+#include "../WorldObjects/WorldObject.h"
 #include "../GameMap/Grid/Grid.h"
 
 class Game

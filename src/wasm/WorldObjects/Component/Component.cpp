@@ -18,6 +18,10 @@ void Component::Draw()
     case ComponentType::kEngine:
         std::cout << "%";
         break;
+    case ComponentType::kNull:
+        std::cout << "Something failed to setup";
+        system("pause");
+        return;
     }
 }
 

@@ -1,7 +1,7 @@
 #include "Player.h"
-#include "Grid.h"
-#include "WorldObject.h"
-#include "Inventory.h"
+#include "../GameMap/Grid/Grid.h"
+#include "../WorldObjects/WorldObject.h"
+#include "Inventory/Inventory.h"
 
 Player::Player(int health, int x, int y)
     : m_health(health)
@@ -15,7 +15,11 @@ bool Player::PlayerController(WorldObject* pWorldObject, std::vector<WorldObject
     if (m_health <= 0)
         return false;
 
-    char input = _getch();
+    char input;
+
+    std::cout << "character Choice: ";
+    
+    std::scanf("%c", &input);
 
     switch (input)
     {

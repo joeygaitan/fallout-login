@@ -8,4 +8,6 @@ struct IWorldObject
 
     // handles player interactions for world objects.
     virtual void Action(Player& player) = 0;
+
+    virtual ~IWorldObject() {};
 };

@@ -1,6 +1,6 @@
 #include "Rocket.h"
-#include "Player.h"
-#include "Game.h"
+#include "../../Player/Player.h"
+#include "../../Game/Game.h"
 
 Rocket::Rocket(std::map<WorldObject::ComponentType, int> amountRequired)
     : WorldObject(WorldObject::WorldObjectType::kRocket)

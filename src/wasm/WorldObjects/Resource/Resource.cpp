@@ -24,6 +24,10 @@ void Resource::Draw()
             case WorldObject::ResourceType::kCobalt:
                 std::cout << "#";
                 break;
+            case WorldObject::ResourceType::kNull:
+                std::cout << "Something failed to setup";
+                system("pause");
+                return;
         }
     }
     else

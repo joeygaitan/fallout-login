@@ -1,6 +1,6 @@
 #include "Inventory.h"
-#include "Resource.h"
-#include "Component.h"
+#include "../../WorldObjects/Resource/Resource.h"
+#include "../../WorldObjects/Component/Component.h"
 
 Inventory::Inventory()
     : m_inventory({})

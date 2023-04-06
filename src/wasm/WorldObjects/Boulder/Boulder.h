@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "WorldObject.h"
+#include "../WorldObject.h"
 class Boulder :
     public WorldObject
 {

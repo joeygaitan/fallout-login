@@ -15,7 +15,8 @@ public:
         kWOcount,
         kRocket,
         kAssembler,
-        kComponent
+        kComponent,
+        kBoulder
     };
     enum class ComponentType
     {
